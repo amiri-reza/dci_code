@@ -11,6 +11,6 @@ time.sleep(5)
 length = len(input_text)%2
 
 if length == 0:
-    print(input_text, "--> even")
+    print("The word/sentence you wrote", "'",input_text,"' is even.")
 else:
-    print(input_text, "--> odd")
+    print("The word/sentence you wrote", "'",input_text,"' is odd.")
