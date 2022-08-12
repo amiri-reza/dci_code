@@ -10,7 +10,7 @@ while True:
         print("*****Inches*****")
         print("%.3f" % Results)
         print("%.4f" % Results)
-        print("%.5f" % Results)'''
+        print("%.5f" % Results)
 
 num = int(input("Enter a number: "))
 flag = False
@@ -30,5 +30,10 @@ if flag:
     print(num, "is not a prime number")
 else:
     print(num, "is a prime number")
+
+'''
+
+
+print(2, "\n", 2, 2, 2, 2)
 
 
