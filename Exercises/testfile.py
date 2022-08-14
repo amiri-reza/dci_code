@@ -32,8 +32,7 @@ else:
     print(num, "is a prime number")
 
 '''
-
-
-print(2, "\n", 2, 2, 2, 2)
-
+x,y=map(int,input().split())#you can change the int to specify or intialize any other data structures
+print(x)
+print(y)
 
