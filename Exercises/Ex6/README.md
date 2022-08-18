@@ -265,7 +265,7 @@ Program with bugs:
 ```python
 x = input("First number: ")
 y = input("Second number: ")
-
+b = a
 result = x + y
 
 if result > 15 or result < 20:
