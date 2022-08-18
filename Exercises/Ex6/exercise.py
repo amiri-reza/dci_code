@@ -20,26 +20,26 @@ for i in range(1,max_num):   # max_num, not max_number
         print(i, three_mul)
     elif i%num2 == 0:
         print(i, five_mul)      
-'''
-
 
 '''
+'''
+
 print("""------------------------------------------------------------
 Task 2
 ---------------------------------------------------------------------""")
 
 
 
-n = 5        #50
-number = 1     #f2
-sum = 0      #f1
+n = 5        
+number = 1     
+sum = 0      
 while number < n + 1:
     sum = sum + number    # instead of 1, enter "number"  # 1 3 6 10 15  
     number = number + 1                                   # 2 3 4 5   
 
 print("Sum =", sum)
-'''
 
+'''
 
 
 
@@ -85,13 +85,13 @@ while countdown:
 else:
     print("Start!")
 
-'''
-
-
-
 
 '''
 
+
+
+
+'''
 print("""------------------------------------------------------------
 Task 5
 ---------------------------------------------------------------------""")
@@ -108,11 +108,11 @@ while i < 3:
         print("Calculated sum is ", sum, "\n")    #sum is the calculated result, not result
                                              # print should be indented.
     i += 1
-'''
-
-
 
 '''
+
+'''
+
 print("""------------------------------------------------------------
 Task 6
 ---------------------------------------------------------------------""")
@@ -131,12 +131,15 @@ while a < 2:
         print("Calculated sum is ", result)
     a += 1
 
-'''
-
-
-
 
 '''
+
+
+
+
+
+'''
+
 print("""------------------------------------------------------------
 Task 7
 ---------------------------------------------------------------------""")
@@ -149,6 +152,7 @@ temp = a
 a = b
 b = temp
 
+
 print("After swapping: a =", a, " ,b =", b)
 '''
 
@@ -160,12 +164,12 @@ Task 8
 x = float(input("First number: "))
 y = float(input("Second number: "))
 z = float(input("Third number: "))
-print("***********************************")
+print("**************first method*********************")
 print("The maximum value is ", max(x, y ,z))
 print("The minimum value is ", min(x, y ,z))
 print("***********************************")
 
-print("..................................")
+print("..............second method....................")
 if x > y and x > z:
     print("the maximum value is ", x)
 elif y > x and y > z:
@@ -196,6 +200,8 @@ while o < 3:
             print("Your entered value is now ", bool(y))
         elif y == 1:
             print("Your entered value is now ", bool(y))
+        else:
+            print("Your entered value is ", x)
     except ValueError:
         print("Your entered value is now ", x)
      
@@ -212,9 +218,9 @@ x = int(input("First number: "))
 y = int(input("Second number: "))
 
 if x % y == 0:
-    print("First number is divisible by second number, result =", x // y)
+    print("First number is divisible by second number, result =", x / y)
 elif y % x == 0:
-    print("Second number is divisible by first number, result =", y // x)
+    print("Second number is divisible by first number, result =", y / x)
 else:
     print("Numbers are non-divisible!")
 
