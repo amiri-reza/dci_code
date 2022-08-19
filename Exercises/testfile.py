@@ -32,6 +32,7 @@ else:
     print(num, "is a prime number")
 
 '''
+g1 = "What is the biggest continent in the world?"
+g1o = "A: Africa  B: Europe  C: Asia   D: North America to quit, press Q"
 
-
-
+print(g1.center(100), g1o.center(100), sep="\n")
