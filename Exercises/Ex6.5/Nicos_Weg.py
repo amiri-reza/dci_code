@@ -24,7 +24,7 @@ questions =[
         """\
         ate some food and is ready to continue walking. pay the 
         restaurant or run?""", 
-        "is at Elizabeth's door. The story is finished. Thank you!\nTHE END"]
+        ]
 ways =[
     "\nTo Help him PRESS H \nor \nTo Leave it PRESS L\n", 
     "\nTo Follow thief PRESS F \nor \nTo Ask for help PRESS A\n", 
@@ -139,6 +139,7 @@ elif choice == "l":
         else:
             print("Wrong Keyboard Input. Try Again!")
             break
+    print(name, "is at Elizabeth's door. The story is finished. Thank you!")
     print("\nYour progress was",round(float(progress/len(questions[1]))*100),"%")
 else:
     print("Wrong Input. Try Again! Thank You.")
