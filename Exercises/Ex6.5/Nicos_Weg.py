@@ -74,11 +74,11 @@ bad_results =[
         "Walking with empty stomach, thirsty and lack of sleep? RIP!",
         "Ran away. But not far. Police was fast!"]
 
+
 separator = "*"*79
 print(separator, Fore.LIGHTCYAN_EX+"")
 tprint("NICOS WEG", font="random")
 print(""+Style.RESET_ALL+separator )
-
 
 
 gender = input(dedent("""\
@@ -90,7 +90,6 @@ if gender ==    "1":
     he_she =    "he"
     him_her =   "him"
     his_her =   "his"
-    
 elif gender == "2":
     name = "Lisa"
     he_she = "she"
@@ -126,7 +125,6 @@ if choice == "r":
             print("Wrong Keyboard Input. Try Again!")
             break
     print("\nYour progress was",round(float(progress/len(questions[0]))*100),"%")
-
 elif choice == "l":
     for question, way, right_way, wrong_way, bad_result in zip(
         questions[1], ways[1], right_ways[1], wrong_ways[1], bad_results[1]):
@@ -144,6 +142,7 @@ elif choice == "l":
     print("\nYour progress was",round(float(progress/len(questions[1]))*100),"%")
 else:
     print("Wrong Input. Try Again! Thank You.")
+
 print(f"THE END!".center(71))
 
 
