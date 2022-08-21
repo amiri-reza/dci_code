@@ -67,3 +67,28 @@ sheep = ["sheep", 1, 2, 3, 4,
          4, 23, "hi", "to", "sheep"]
 
 print(count_sheep(sheep))
+
+
+
+# increased by former number
+Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+def summation(num):
+    x = 0
+    x1 = 1
+    plus = 1
+    for plus in range(num+1):
+        plus = x + plus
+        x = plus
+    return plus
+
+# clock in milliseconds
+
+Clock shows h hours, m minutes and s seconds after midnight.
+
+Your task is to write a function which returns the time since midnight in milliseconds.
+
+def past(h, m, s):
+    return h*3600000 + m*60000 + s*1000
+
+#
