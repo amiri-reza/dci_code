@@ -1,7 +1,8 @@
 from art import *
 from colorama import *
 from textwrap import dedent
-
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
 questions =[
     " saw a lady who needs help. what is better to be done?",
     """\
