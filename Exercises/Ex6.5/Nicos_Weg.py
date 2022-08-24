@@ -3,6 +3,8 @@ from colorama import *
 from textwrap import dedent
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
+
+
 questions =[
     " saw a lady who needs help. what is better to be done?",
     """\
@@ -97,7 +99,7 @@ elif gender == "2":
     him_her = "her"
     his_her = "her"
 else:
-    print("Please select the correct answer and try again!")
+    print("Please select the ight_wcorrect answer and try again!")
     quit()
 x = (
     f"""\
@@ -115,12 +117,12 @@ if choice == "r":
     for question, way, right_way, wrong_way, bad_result in zip(
         questions[0], ways[0], right_ways[0], wrong_ways[0], bad_results[0]):
         print(separator+"\n"+name, dedent(question))
-        choice = input(dedent(way))
+        choice = input(way)
         if choice.lower() in right_way:
             progress += 1
             print(right_way[1])
         elif choice.lower() in wrong_way:
-            print(wrong_way[1],"\n"+dedent(bad_result))
+            print(wrong_way[1],"\n"+(bad_result))
             break
         else:
             print("Wrong Keyboard Input. Try Again!")
@@ -130,12 +132,12 @@ elif choice == "l":
     for question, way, right_way, wrong_way, bad_result in zip(
         questions[1], ways[1], right_ways[1], wrong_ways[1], bad_results[1]):
         print(name, dedent(question))
-        choice = input(dedent(way))
+        choice = input(way)
         if choice.lower() in right_way:
             progress += 1
             print(right_way[1])
         elif choice.lower() in wrong_way:
-            print(wrong_way[1],"\n"+dedent(bad_result))
+            print(wrong_way[1],"\n"+(bad_result))
             break
         else:
             print("Wrong Keyboard Input. Try Again!")
