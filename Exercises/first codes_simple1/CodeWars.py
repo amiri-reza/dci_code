@@ -91,4 +91,49 @@ Your task is to write a function which returns the time since midnight in millis
 def past(h, m, s):
     return h*3600000 + m*60000 + s*1000
 
-#
+# Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+# For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+# Note: The function accepts an integer and returns an integer
+
+def square_digits(num):
+    num = str(num)
+    ans = ''
+    for i in num:
+        ans += str(int(i)**2)
+    return int(ans)
+
+# Take 2 strings s1 and s2 including only letters from a to z. 
+# Return a new sorted string, the longest possible, containing distinct letters - 
+# each taken only once - coming from s1 or s2.
+#a = "xyaabbbccccdefww"
+#b = "xxxxyyyyabklmopq"
+#longest(a, b) -> "abcdefklmopqwxy"
+
+def longest(s1, s2):
+    
+    # Defining the Alphabet
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    
+    # Concatenating the Two Given Strings
+    s = s1 + s2
+    
+    # Declaring the Output Variable
+    y = ""
+    
+    # Comparing whether a letter is in the string
+    for x in alphabet:
+      if x not in s:
+        continue
+      if x in s:
+        y = y + x
+        
+    # returning the final output    
+    return y
+
+
+
+
+
+
+
+
