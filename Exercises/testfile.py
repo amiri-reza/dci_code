@@ -4,39 +4,39 @@ while True:
     user_input = input()
     if user_input.lower() == "end":
         break
-    else:
-        MM = float(user_input)
-        Results=float(MM/convert)
-        print("*****Inches*****")
-        print("%.3f" % Results)
-        print("%.4f" % Results)
-        print("%.5f" % Results)
+#     else:
+#         MM = float(user_input)
+#         Results=float(MM/convert)
+#         print("*****Inches*****")
+#         print("%.3f" % Results)
+#         print("%.4f" % Results)
+#         print("%.5f" % Results)
 
-num = int(input("Enter a number: "))
-flag = False
+# num = int(input("Enter a number: "))
+# flag = False
 
-# prime numbers are greater than 1
-if num > 1:
-    # check for factors
-    for i in range(2, num):
-        if (num % i) == 0:
-            # if factor is found, set flag to True
-            flag = True
-            # break out of loop
-            break
+# # prime numbers are greater than 1
+# if num > 1:
+#     # check for factors
+#     for i in range(2, num):
+#         if (num % i) == 0:
+#             # if factor is found, set flag to True
+#             flag = True
+#             # break out of loop
+#             break
 
-# check if flag is True
-if flag:
-    print(num, "is not a prime number")
-else:
-    print(num, "is a prime number")
+# # check if flag is True
+# if flag:
+#     print(num, "is not a prime number")
+# else:
+#     print(num, "is a prime number")
 
-'''
-from textwrap import dedent
-import textwrap
+# '''
+# from textwrap import dedent
+# import textwrap
 
-x = "this is a sentence. i am very happy. my name is Reza"
-print(f"hello{'. '.join(map(lambda s: s.strip().capitalize(), x.split('.')))}")                           
+# x = "this is a sentence. i am very happy. my name is Reza"
+# print(f"hello{'. '.join(map(lambda s: s.strip().capitalize(), x.split('.')))}")                           
 #x = input(dedent(y)).lower()
 
 #print(x)
@@ -74,4 +74,8 @@ print(f"hello{'. '.join(map(lambda s: s.strip().capitalize(), x.split('.')))}")
 #         else:
 #             print("Incorrect", answer)
 #     print(score, "out of", len(questions), "that is", float(score / len(questions)) * 100, "%")
-# quiz()
+# quit
+
+
+
+
