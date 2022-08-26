@@ -8,3 +8,4 @@ def normalize(x):
 normalize("CAPS LOCK DAY IS OVER")
 normalize("Today is not caps lock day.")
 normalize("Let us stay calm, no need to panic.")
+normalize("October 22nd")
