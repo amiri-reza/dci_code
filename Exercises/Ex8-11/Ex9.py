@@ -1,10 +1,13 @@
-def normalize(x):
-    if x == "October 22nd":
-        print(x.upper())
-    elif x.isupper() == True:
-        print(f"{x.capitalize()}!")
+def normalize(message):
+    # if the input is October 22nd, it will be uppercase.
+    if message == "October 22nd":
+        print(message.upper())
+    #  if the message is uppercase, it will be capitalized with "!" mark.
+    elif message.isupper() == True:
+        print(f"{message.capitalize()}!")
+    # if the message is lowercase, it will be just capitalized.
     else:
-        print(f"{x.capitalize()}")
+        print(f"{message.capitalize()}")
 normalize("CAPS LOCK DAY IS OVER")
 normalize("Today is not caps lock day.")
 normalize("Let us stay calm, no need to panic.")

@@ -75,6 +75,18 @@ while True:
 #             print("Incorrect", answer)
 #     print(score, "out of", len(questions), "that is", float(score / len(questions)) * 100, "%")
 # quit
+import math
+a = 2
+b = 5
+c = 7
+s = (a+b+c) 
+area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+print(area)
+
+
+
+
+
 
 
 
