@@ -1,4 +1,4 @@
-g = """One morning, when Gregor Samsa woke from o l troubled dreams, 
+text = """One morning, when Gregor Samsa woke from o l troubled dreams, 
 he found himself transformed in his bed into a horrible vermin.
  He lay on his armour-like back, and if he lifted his head a 
 little he could see his brown belly, slightly domed and divided by 
@@ -9,15 +9,15 @@ as he looked."""
 
 
 hello = "hello"
-y = ""
-for x in hello:
+result_1 = ""
+for character in hello:
     
-    while x in g:
+    while character in text:
         
-        x = y + x
-        y = x
+        character = result_1 + character           
+        result_1 = character                  
         break
-print(y.capitalize(), (g.split())[3])
+print(result_1.capitalize(), (text.split())[3])
 
 
 
