@@ -75,20 +75,39 @@ while True:
 #             print("Incorrect", answer)
 #     print(score, "out of", len(questions), "that is", float(score / len(questions)) * 100, "%")
 # quit
-- Create a repository just on your computer
-- Create a git notes file in that repository
-- Every time you make an entry into the file, make a commit
-- Research the topics listed below and add a short definition of them **in your words** to the README 
-  - Surface level research for now, we are not making a PHD here...
-  - Commit after each one!
-- Topics:
-  - "What makes a good commit message"
-  - "What is staging in git"
-  - "How to check which version of git you have installed"
-  - "What is Semantic Versioning (SemVer)"
-  - "How to see previous commands I have done in Linux"
-- Then add a new text file with the relevant commands that you have used doing this exercise
+# - Create a repository just on your computer
+# - Create a git notes file in that repository
+# - Every time you make an entry into the file, make a commit
+# - Research the topics listed below and add a short definition of them **in your words** to the README 
+#   - Surface level research for now, we are not making a PHD here...
+#   - Commit after each one!
+# - Topics:
+#   - "What makes a good commit message"
+#   - "What is staging in git"
+#   - "How to check which version of git you have installed"
+#   - "What is Semantic Versioning (SemVer)"
+#   - "How to see previous commands I have done in Linux"
+# - Then add a new text file with the relevant commands that you have used doing this exercise
+
+import re
 
 
+
+
+text = """ Hello, This is a simple sentence. 
+The quick brown fox jumps over the lazy dog. 
+THE QUICK BROWN FOX jumps OVer ThE lAzy dog."""
+
+pattern = r"([A-Z][a-z].)"
+
+match = re.match(pattern, text)
+print(match)
+print("----------------------------")
+search = re.search(pattern, text)
+print(search)
+none = re.match("dci", text)
+null = re.search("dci", text)
+print(type(none))
+print(type(null))
 
 
