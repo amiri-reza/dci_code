@@ -23,7 +23,7 @@ print("------------Task 4-----------------")
 
 date_as_string = "Feb 14 2021 8:30AM"
 
-print(datetime.datetime.strptime(date_as_string, "%b %d %Y %H:%M%p"))
+print(datetime.datetime.strptime(date_as_string, "%b %d %Y %I:%M%p"))
 
 
 
