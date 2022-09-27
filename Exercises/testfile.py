@@ -1,3 +1,11 @@
+
+from distutils.command.build_scripts import first_line_re
+import re
+import datetime
+import os
+import time
+
+
 '''convert=float(25.4)
 while True:
     print("*******MM*******")
@@ -89,11 +97,7 @@ while True:
 #   - "How to see previous commands I have done in Linux"
 # - Then add a new text file with the relevant commands that you have used doing this exercise
 
-from locale import DAY_1
-import re
-import datetime
-import os
-import time
+
 
 
 
@@ -124,10 +128,17 @@ import time
 # d9 = d3.year              # takes out the year from a datetime object as 'int' value
 # d10= d3.month             # takes out the month from a datetime object as 'int' value
 # d11= d3.hour             # takes out the hour from a datetime object as 'int' value
-# d12= d2 + datetime.timedelta(days=366) # timedelta method is used for calculating the differences in dates (uses days, seconds, weeks)
-# d13= ""
-# d14= dir(datetime)     # shows the list of methods for datetime module
+# d12= d2 + datdef full_name (*name):
+# collect_name = ""
+# for i in name:
+# if i != name[-1]:
+# collect_name += f"{i} "
+# else:
+# collect_name += f"{i}"
+# return collect_name
 
+# enter_name = full_name("ABC", "abc", "lmn", "LMN")
+# print(enter_name) 
 
 
 
@@ -135,19 +146,109 @@ import time
 
 
 
+# def sub(first_number, second_number):
+#     return first_number-second_number
+
+# def multiply(first_number, second_number):
+#     return first_number*second_number
+
+# def divide(first_number, second_number):
+#     return first_number/second_number
+
+# def add(first_number, second_number):
+#     return first_number+second_number
+
+# first_input = int(input("Enter the first number: "))
+# second_input = int(input("Enter the second number: "))
+
+
+# print(f"Subtraction result of first number to the second number is {sub(first_input, second_input)}.")
+# print(f"Multiplication result of first number to the second number is {multiply(first_input, second_input)}.")
+# print(f"Division result of first number to the second number is {divide(first_input, second_input)}.")
+# print(f"Addition result of first number to the second number is {add(first_input, second_input)}.")
+
+
+
+# names = ["Victor", "Peter", "Mary", "John", "Badara", "Peer"]
+
+# names[-1] = "Malcom X"
+
+# additional_names = ["Ahmad", "Jack"]
+
+# names = names+additional_names
+# names.extend(additional_names)
+# names.insert(3, "Shantanu")
+# names.append("Appended")
+# names.index("Malcom X")
+# names.pop()
+# names.remove("Victor")
+# names.reverse()
+# names.clear()
+
+
+# print(names)
+
+
+# names = []
+# user_input=""
+# while user_input != "q":
+#     user_input = input("name: ")
+
+#     if user_input == "q":
+#         print(names)
+#         quit()
+#     names.append(user_input)
+#     print(names)
+
+# def full_name (*name):
+# collect_name = ""
+# for i in name:
+# if i != name[-1]:
+# collect_name += f"{i} "
+# else:
+# collect_name += f"{i}"
+# return collect_name
+
+# enter_name = full_name("ABC", "abc", "lmn", "LMN")
+# print(enter_name) 
+
+# def full_name(**kwargs):
+#     print(kwargs)
+#     first_name = kwargs["first_name"]
+#     last_name = kwargs["last_name"]
+#     def add_sir(name):
+#         return f"Sir {name}"
+#     return f"{first_name} {last_name}"
+
+
+# print(full_name(first_name="Jane", last_name="Doe", location="Berlin"))
+
+last_name = {"Doe": "John",
+             "Jack": "Brown",
+             "Jeo": "White",
+             "Brianne": "Stark",
+             "Molly": "Andrews"         
+}
+# "Pass by reference" variables can change
+def full_name(last_name):
+    # variations 
+    last_name["Doe"] = "Hoffmann"
+    last_name["brianne"] = "Tarth"
+    return last_name["Doe"], last_name["Brianne"]
+
+print(full_name(last_name))
+#print(last_name)
 
 
 
 
-Flag = True
-while Flag:
-    try:
-        print('scan bar code')
-        User_inp = input()
-        if User_inp == '':
-            Flag = False
-    except:
-        print('except part') 
+
+
+
+
+
+
+
 
 
 
