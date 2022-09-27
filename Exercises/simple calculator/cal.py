@@ -1,3 +1,5 @@
+from queue import Empty
+from statistics import geometric_mean
 import sys
 from tkinter import *
 
@@ -38,49 +40,79 @@ def addition():
                                                         # use padx=50/pady=50 or any number to change the size of the button.
                                                         # we can add the functions (by adding 'command=') inside the button to be run by clicking button.
                                                         # we can color the button and text on the button by 'bg="blue' and fg='white' or hex color codes '#000000'.
+def addition():
+    return
+
+def subtraction():
+    return
+
+def multiply():
+    return
+
+def division():
+    return
+
+def percentage():
+    return
+
+def dot():
+    return
+
+def equal():
+    return
+
+def clearscreen():
+    delete(0, END)
+
+
+
 
 # myButton.pack()
 
-number1 = Button(root, text="1", padx=30, pady=30, command=addition)
-number2 = Button(root, text="2", padx=30, pady=30, command=addition)
-number3 = Button(root, text="3", padx=30, pady=30, command=addition)
-number4 = Button(root, text="4", padx=30, pady=30, command=addition)
-number5 = Button(root, text="5", padx=30, pady=30, command=addition)
-number6 = Button(root, text="6", padx=30, pady=30, command=addition)
-number7 = Button(root, text="7", padx=30, pady=30, command=addition)
-number8 = Button(root, text="8", padx=30, pady=30, command=addition)
-number9 = Button(root, text="9", padx=30, pady=30, command=addition)
-number0 = Button(root, text="0", padx=30, pady=30, command=addition)
-comma = Button(root, text=chr(44), padx=31, pady=30, command=addition)
-number00 = Button(root, text="00", padx=26, pady=30, command=addition)
-equal   = Button(root, text="=", padx=30, pady=30, command=addition)
-plus    = Button(root, text="+", padx=30, pady=30, command=addition)
-minus   = Button(root, text=chr(8722), padx=30, pady=30, command=addition)
-multiple = Button(root, text="x", padx=30, pady=30, command=addition)
-divide  = Button(root, text=chr(247), padx=30, pady=30, command=addition)
-
+number1 = Button(root, text="1", padx=30, pady=30, borderwidth=2, command=addition)
+number2 = Button(root, text="2", padx=30, pady=30, borderwidth=2, command=addition)
+number3 = Button(root, text="3", padx=30, pady=30, borderwidth=2, command=addition)
+number4 = Button(root, text="4", padx=30, pady=30, borderwidth=2, command=addition)
+number5 = Button(root, text="5", padx=30, pady=30, borderwidth=2, command=addition)
+number6 = Button(root, text="6", padx=30, pady=30, borderwidth=2, command=addition)
+number7 = Button(root, text="7", padx=30, pady=30, borderwidth=2, command=addition)
+number8 = Button(root, text="8", padx=30, pady=30, borderwidth=2, command=addition)
+number9 = Button(root, text="9", padx=30, pady=30, borderwidth=2, command=addition)
+number0 = Button(root, text="0", padx=30, pady=30, borderwidth=2, command=addition)
+comma = Button(root, text=chr(44), padx=32, pady=30, borderwidth=2, command=addition)
+number00 = Button(root, text="00", padx=26, pady=30, borderwidth=2, command=addition)
+equals   = Button(root, text="=", padx=30, pady=30, borderwidth=2, command=addition)
+plus    = Button(root, text="+", padx=30, pady=30, borderwidth=2, command=addition)
+minus   = Button(root, text=chr(8722), padx=30, pady=30, borderwidth=2, command=addition)
+multiple = Button(root, text="*", padx=32, pady=30, borderwidth=2, command=addition)
+divide  = Button(root, text=chr(247), padx=30, pady=30, borderwidth=2, command=addition)
+clear  = Button(root, text="C", padx=29, pady=30, borderwidth=2, command=clearscreen)
+percent  = Button(root, text="%", padx=27, pady=30, borderwidth=2, command=addition)
+power  = Button(root, text="^", padx=28, pady=30, borderwidth=2, command=addition)
 
 number1.grid(row=1, column=0)
 number2.grid(row=1, column=1)
 number3.grid(row=1, column=2)
+plus.grid(   row=1, column=3)
 number4.grid(row=2, column=0)
 number5.grid(row=2, column=1)
 number6.grid(row=2, column=2)
+minus.grid(  row=2, column=3)
 number7.grid(row=3, column=0)
 number8.grid(row=3, column=1)
 number9.grid(row=3, column=2)
-comma.grid(row=4, column=0)
+multiple.grid(row=3,column=3)
+comma.grid(  row=4, column=0)
 number0.grid(row=4, column=1)
-number00.grid(row=4, column=2)
-equal.grid(row=5, column=4)
-plus.grid(row=1, column=4)
-minus.grid(row=2, column=4)
-multiple.grid(row=3, column=4)
-divide.grid(row=4, column=4)
+number00.grid(row=4,column=2)
+divide.grid( row=4, column=3)
+clear.grid( row=5, column=0)
+percent.grid( row=5, column=1)
+power.grid( row=5, column=2)
+equals.grid(  row=5, column=3)
 
-
-inputScreen = Entry(root, bg="#ffffff", fg="black", borderwidth=7)
-inputScreen.grid(row=0, column=0, columnspan=4)
+inputScreen = Entry(root, bg="#ffffff", fg="black", borderwidth=4, font="Terminal" )
+inputScreen.grid(row=0, column=0, columnspan=4, ipadx=40, ipady=30)
 
 
 
