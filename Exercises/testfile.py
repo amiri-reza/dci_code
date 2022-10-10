@@ -223,21 +223,41 @@ while True:
 
 # print(full_name(first_name="Jane", last_name="Doe", location="Berlin"))
 
-last_name = {"Doe": "John",
-             "Jack": "Brown",
-             "Jeo": "White",
-             "Brianne": "Stark",
-             "Molly": "Andrews"         
-}
-# "Pass by reference" variables can change
-def full_name(last_name):
-    # variations 
-    last_name["Doe"] = "Hoffmann"
-    last_name["brianne"] = "Tarth"
-    return last_name["Doe"], last_name["Brianne"]
+# last_name = {"Doe": "John",
+#              "Jack": "Brown",
+#              "Jeo": "White",
+#              "Brianne": "Stark",
+#              "Molly": "Andrews"         
+# }
+#                                                 # "Pass by reference" variables can change
+# def full_name(last_name):
+#                                                 # variations 
+#     last_name["Doe"] = "Hoffmann"
+#     last_name["Brianne"] = "Tarth"
+    
+#     return last_name["Doe"], last_name["Brianne"]
 
-print(full_name(last_name))
-#print(last_name)
+# print(full_name(last_name))
+# print(last_name)
+    
+    
+    
+    
+    
+                                                #print(last_name)
+
+
+
+last_name = "Emily"        
+                                                # "Pass by reference" variables can change
+def full_name(last_name):
+                                                # variations 
+    last_name = "Tom"
+    
+    return last_name
+
+full_name(last_name)
+print(last_name)
 
 
 
